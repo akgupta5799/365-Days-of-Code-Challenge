@@ -1,0 +1,12 @@
+Question link: https://www.interviewbit.com/problems/reverse-the-string/
+
+public class Solution {
+    public String solve(String A) {
+        String[] splittedString = A.split("\\s+");
+        StringBuilder sb = new StringBuilder();
+        for(int i=splittedString.length - 1; i>=0;i--){
+            sb.append(splittedString[i]).append(" ");
+        }
+        return  sb.toString().trim();
+    }
+}
